@@ -2,11 +2,9 @@
 // Copyright © 2021 System76
 
 pub mod calc;
-pub mod cosmic_toplevel;
 pub mod desktop_entries;
 pub mod files;
 pub mod find;
-pub mod pop_shell;
 pub mod pulse;
 pub mod recent;
 pub mod scripts;

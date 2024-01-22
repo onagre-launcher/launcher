@@ -23,13 +23,11 @@ async fn main() {
             "find" => plugins::find::main().await,
             "files" => plugins::files::main().await,
             "pop-launcher" => service::main().await,
-            "pop-shell" => plugins::pop_shell::main().await,
             "pulse" => plugins::pulse::main().await,
             "recent" => plugins::recent::main().await,
             "scripts" => plugins::scripts::main().await,
             "terminal" => plugins::terminal::main().await,
             "web" => plugins::web::main().await,
-            "cosmic-toplevel" => plugins::cosmic_toplevel::main().await,
             unknown => {
                 eprintln!("unknown cmd: {}", unknown);
             }

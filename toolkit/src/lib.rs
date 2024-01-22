@@ -82,7 +82,7 @@
 //!       // Here we use xdg_open to run the entry but this could be anything
 //!       plugins::xdg_open(entry);
 //!       // Tell pop launcher we are done
-//!       self.respond_with(PluginResponse::Finished);
+//!       self.respond_with(PluginResponse::Finished).await;
 //!   }
 //!
 //!   // Respond to `pop-launcher` 'close' request.
