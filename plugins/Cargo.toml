@@ -4,7 +4,7 @@ version = "1.2.3"
 license = "GPL-3.0-only"
 authors = ["Michael Aaron Murphy <mmstick@pm.me>"]
 edition = "2018"
-publish = false
+description = "Default plugins for pop-launcher (onagre fork)"
 
 [dependencies]
 async-pidfd = "0.1.4"
