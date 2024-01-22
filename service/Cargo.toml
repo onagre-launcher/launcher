@@ -3,6 +3,7 @@ name = "onagre-launcher-service"
 version= "1.2.3"
 license = "MPL-2.0"
 edition = "2018"
+description = "Library for writing plugins and frontends for pop-launcher"
 
 [dependencies]
 anyhow = "1.0.66"
@@ -13,7 +14,7 @@ futures = "0.3.25"
 futures_codec = "0.4.1"
 gen-z = "0.1.0"
 num_cpus = "1.14.0"
-onagre-launcher = { path = "../" }
+onagre-launcher = "1.2.3"
 regex = "1.6.0"
 ron = "0.8.0"
 serde = { version = "1.0.147", features = ["derive"] }
