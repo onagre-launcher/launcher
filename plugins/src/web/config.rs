@@ -51,7 +51,7 @@ pub struct Definition {
 pub fn load() -> Config {
     let mut config = Config::default();
 
-    for path in pop_launcher::config::find("web") {
+    for path in onagre_launcher::config::find("web") {
         let string = match std::fs::read_to_string(&path) {
             Ok(string) => string,
             Err(why) => {

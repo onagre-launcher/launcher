@@ -2,7 +2,7 @@
 // Copyright © 2021 System76
 
 use futures::StreamExt;
-use pop_launcher::*;
+use onagre_launcher::*;
 use regex::Regex;
 use std::{borrow::Cow, io, process::Stdio};
 use tokio::{

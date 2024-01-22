@@ -6,7 +6,7 @@ mod graphics;
 use crate::*;
 use freedesktop_desktop_entry::{default_paths, DesktopEntry, Iter as DesktopIter, PathSource};
 use futures::StreamExt;
-use pop_launcher::*;
+use onagre_launcher::*;
 use std::borrow::Cow;
 use std::hash::{Hash, Hasher};
 use std::path::PathBuf;

@@ -3,7 +3,7 @@
 
 use crate::*;
 use flume::Sender;
-use pop_launcher::*;
+use onagre_launcher::*;
 use slab::Slab;
 use std::borrow::Cow;
 

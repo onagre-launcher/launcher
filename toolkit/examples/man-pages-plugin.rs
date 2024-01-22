@@ -2,8 +2,8 @@
 // Copyright © 2021 System76
 
 use fork::{daemon, Fork};
-use pop_launcher::{Indice, PluginResponse, PluginSearchResult};
-use pop_launcher_toolkit::plugin_trait::{async_trait, PluginExt};
+use onagre_launcher::{Indice, PluginResponse, PluginSearchResult};
+use onagre_launcher_toolkit::plugin_trait::{async_trait, PluginExt};
 use std::io;
 use std::os::unix::process::CommandExt;
 use std::path::PathBuf;

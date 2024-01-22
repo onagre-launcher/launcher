@@ -10,7 +10,7 @@ use futures::StreamExt;
 use reqwest::Client;
 use url::Url;
 
-use pop_launcher::*;
+use onagre_launcher::*;
 
 pub use config::{load, Config, Definition};
 use regex::Regex;

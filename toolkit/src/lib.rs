@@ -1,7 +1,7 @@
 // Copyright 2021 System76 <info@system76.com>
 // SPDX-License-Identifier: MPL-2.0
 
-//! # pop-launcher-toolkit
+//! # onagre-launcher-toolkit
 //!
 //! A toolkit to write pop-launcher client and plugin.
 //!
@@ -20,7 +20,7 @@
 //! ```toml
 //! [dependencies]
 //! tokio = { version = "1.18.2", features = ["rt"] }
-//! pop-launcher-toolkit = { git = "https://github.com/pop-os/launcher" }
+//! onagre-launcher-toolkit = { git = "https://github.com/pop-os/launcher" }
 //! ```
 //!
 //! And implement the [`PluginExt`] trait:
@@ -110,9 +110,9 @@
 //! }
 //! ```
 
-pub use pop_launcher as launcher;
-pub use pop_launcher_plugins as plugins;
-pub use pop_launcher_service::{
+pub use onagre_launcher as launcher;
+pub use onagre_launcher_plugins as plugins;
+pub use onagre_launcher_service::{
     self as service, load::from_path as load_plugin_from_path,
     load::from_paths as load_plugins_from_paths,
 };

@@ -2,7 +2,7 @@
 // Copyright © 2021 System76
 
 use futures::prelude::*;
-use pop_launcher::*;
+use onagre_launcher::*;
 use recently_used_xbel::{parse_file, RecentlyUsed};
 use slab::Slab;
 use std::borrow::Cow;

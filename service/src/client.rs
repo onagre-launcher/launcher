@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MPL-2.0
 
 use futures::{Stream, StreamExt};
-use pop_launcher::{Request, Response};
+use onagre_launcher::{Request, Response};
 use std::io;
 use tokio::io::{AsyncBufReadExt, AsyncWriteExt};
 use tokio::process;

@@ -2,7 +2,7 @@
 // Copyright © 2021 System76
 
 use crate::*;
-use pop_launcher::*;
+use onagre_launcher::*;
 
 use flume::Sender;
 use futures::StreamExt;

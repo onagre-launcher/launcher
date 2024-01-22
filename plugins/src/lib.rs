@@ -11,7 +11,7 @@ pub mod scripts;
 pub mod terminal;
 pub mod web;
 
-use pop_launcher::PluginResponse;
+use onagre_launcher::PluginResponse;
 use std::{borrow::Cow, ffi::OsStr, future::Future, path::Path, process::Stdio};
 use tokio::io::{AsyncWrite, AsyncWriteExt};
 

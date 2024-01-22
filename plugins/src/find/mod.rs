@@ -2,7 +2,7 @@
 // Copyright © 2021 System76
 
 use futures::*;
-use pop_launcher::*;
+use onagre_launcher::*;
 use std::cell::Cell;
 use std::io;
 use std::path::PathBuf;

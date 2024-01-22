@@ -2,10 +2,10 @@
 // SPDX-License-Identifier: MPL-2.0
 
 use futures::StreamExt;
-use pop_launcher::{async_stdin, async_stdout, json_input_stream, Indice, PluginResponse, Request};
+use onagre_launcher::{async_stdin, async_stdout, json_input_stream, Indice, PluginResponse, Request};
 
 pub use async_trait::async_trait;
-use pop_launcher_plugins as plugins;
+use onagre_launcher_plugins as plugins;
 
 /// Re-export of the tracing crate, use this to add custom logs to your plugin
 pub use tracing;
@@ -41,7 +41,7 @@ where
     /// `pop-launcher` request the context for the given [`SearchResult`] id.
     /// to send the requested context use [`PluginResponse::Context`]
     ///
-    /// [`SearchResult`]: pop_launcher::SearchResult
+    /// [`SearchResult`]: onagre_launcher::SearchResult
     async fn context(&mut self, _id: Indice) {}
 
     /// This is automatically called after `pop-launcher` requests the plugin to exit.
