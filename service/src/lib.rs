@@ -138,7 +138,7 @@ impl<O: futures::Sink<Response> + Unpin> Service<O> {
 
     pub async fn exec(mut self, input: impl Stream<Item = Request>) {
         let (service_tx, service_rx) = flume::bounded(1);
-        let stream = plugins::external::load::from_paths();
+        let stream = plugins::external::load::from_paths_async();
 
         futures::pin_mut!(stream);
 

@@ -8,8 +8,8 @@ license = "MPL-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-onagre-launcher-plugins = "1.2.3"
-onagre-launcher-service = "1.2.3"
+onagre-launcher-plugins = { path = "../plugins" }
+onagre-launcher-service = { path = "../service" }
 onagre-launcher = "1.2.3"
 async-trait = "0.1.58"
 tracing = "0.1.37"

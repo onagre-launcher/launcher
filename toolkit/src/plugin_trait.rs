@@ -2,7 +2,9 @@
 // SPDX-License-Identifier: MPL-2.0
 
 use futures::StreamExt;
-use onagre_launcher::{async_stdin, async_stdout, json_input_stream, Indice, PluginResponse, Request};
+use onagre_launcher::{
+    async_stdin, async_stdout, json_input_stream, Indice, PluginResponse, Request,
+};
 
 pub use async_trait::async_trait;
 use onagre_launcher_plugins as plugins;
