@@ -1126,9 +1126,7 @@ dependencies = [
 
 [[package]]
 name = "onagre-launcher"
-version = "1.2.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "56e60d9fbab616fae65d8f2d0a3ea10cbacfc7ddf1befb907c5a68aecefce5a2"
+version = "1.2.4"
 dependencies = [
  "const_format",
  "dirs 4.0.0",
@@ -1143,6 +1141,8 @@ dependencies = [
 [[package]]
 name = "onagre-launcher"
 version = "1.2.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3ba59ef981f75a6240061ddb24e1ed0d1b6b5992525ae8e5f242e8b257b086cb"
 dependencies = [
  "const_format",
  "dirs 4.0.0",
@@ -1181,7 +1181,7 @@ dependencies = [
  "human-sort",
  "human_format",
  "new_mime_guess",
- "onagre-launcher 1.2.3",
+ "onagre-launcher 1.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "recently-used-xbel",
  "regex",
  "reqwest",
@@ -1213,7 +1213,7 @@ dependencies = [
  "futures_codec",
  "gen-z",
  "num_cpus",
- "onagre-launcher 1.2.3",
+ "onagre-launcher 1.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "regex",
  "ron",
  "serde",
@@ -1236,7 +1236,7 @@ dependencies = [
  "dirs 4.0.0",
  "fork",
  "futures",
- "onagre-launcher 1.2.3",
+ "onagre-launcher 1.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "onagre-launcher-plugins",
  "onagre-launcher-service",
  "tokio",
