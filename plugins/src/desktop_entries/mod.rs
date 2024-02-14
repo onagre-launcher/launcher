@@ -265,8 +265,8 @@ impl<W: AsyncWrite + Unpin> App<W> {
                 let append = search_interest.starts_with(&*query)
                     || query
                         .split_ascii_whitespace()
-                        .any(|query| search_interest.contains(&*query))
-                    || strsim::jaro_winkler(&*query, &*search_interest) > 0.6;
+                        .any(|query| search_interest.contains(query))
+                    || strsim::jaro_winkler(&query, &search_interest) > 0.6;
 
                 if append {
                     let desc_source = path_string(&entry.src);

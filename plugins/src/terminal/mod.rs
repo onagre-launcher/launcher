@@ -60,11 +60,11 @@ impl App {
 
             if self.shell_only {
                 cmd = Command::new("sh");
-                cmd.args(&["-c", &exe]);
+                cmd.args(["-c", &exe]);
             } else {
                 let (terminal, arg) = detect_terminal();
                 cmd = Command::new(terminal);
-                cmd.args(&[
+                cmd.args([
                     arg,
                     "sh",
                     "-c",

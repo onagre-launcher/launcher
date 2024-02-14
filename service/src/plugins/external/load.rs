@@ -29,8 +29,7 @@ pub fn from_paths_async() -> impl Stream<Item = (PathBuf, PluginConfig, Option<R
 pub fn from_paths() -> impl Iterator<Item = (PathBuf, PluginConfig, Option<Regex>)> {
     crate::plugin_paths()
         .flat_map(|path| from_path(path.to_path_buf()))
-        .map(|(source, config)| crate::plugins::config::load(&source, &config))
-        .flatten()
+        .filter_map(|(source, config)| crate::plugins::config::load(&source, &config))
 }
 
 /// Loads all plugin information found in the given path.
@@ -51,7 +50,7 @@ pub fn from_path(path: PathBuf) -> Vec<(PathBuf, PathBuf)> {
                 })
                 .collect()
         })
-        .unwrap_or(vec![])
+        .unwrap_or_default()
 }
 
 /// Loads all plugin information found in the given path.

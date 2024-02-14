@@ -153,7 +153,7 @@ impl App {
                 // First use the defined icon source, if it is defined
                 Some(icon_source)
                     .filter(|s| !s.is_empty())
-                    .map(|url| fetch(url)),
+                    .map(fetch),
             ];
 
             if let Some(domain) = domain {
@@ -161,7 +161,7 @@ impl App {
                     // Searches for the favicon if it's not defined at the root of the domain.
                     favicon_from_page(&domain, client)
                         .await
-                        .map(|url| fetch(url)),
+                        .map(fetch),
                     // If not found, fetch from root domain.
                     Some(fetch(["https://", &domain, "/favicon.ico"].concat())),
                     // If all else fails, try Google.
