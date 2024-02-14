@@ -1,4 +1,8 @@
-# Pop Launcher
+# Onagre launcher
+
+**This repository is a fork of [pop-launcher](https://github.com/pop-os/launcher) which gets read
+of all the PopOs specific and dependencies.** 
+
 
 ![](https://img.shields.io/badge/rustc-1.51-orange)
 
