@@ -1201,8 +1201,74 @@ dependencies = [
 ]
 
 [[package]]
+name = "onagre-launcher-plugins"
+version = "1.2.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9cf4de7d41a9202a23fb6484a43f3939faa5a903a650ea3ee45fbbd2518d88a2"
+dependencies = [
+ "anyhow",
+ "async-pidfd",
+ "bytes 1.2.1",
+ "dirs 4.0.0",
+ "flume",
+ "fork",
+ "freedesktop-desktop-entry",
+ "futures",
+ "human-sort",
+ "human_format",
+ "new_mime_guess",
+ "onagre-launcher 1.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "recently-used-xbel",
+ "regex",
+ "reqwest",
+ "ron",
+ "serde",
+ "serde_json",
+ "slab",
+ "strsim",
+ "sysfs-class",
+ "tokio",
+ "tracing",
+ "url",
+ "urlencoding",
+ "ward",
+ "zbus",
+ "zvariant",
+]
+
+[[package]]
 name = "onagre-launcher-service"
 version = "1.2.4"
+dependencies = [
+ "anyhow",
+ "async-oneshot",
+ "async-trait",
+ "dirs 4.0.0",
+ "flume",
+ "futures",
+ "futures_codec",
+ "gen-z",
+ "num_cpus",
+ "onagre-launcher 1.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "regex",
+ "ron",
+ "serde",
+ "serde_json",
+ "serde_with",
+ "slab",
+ "strsim",
+ "tokio",
+ "tokio-stream",
+ "toml",
+ "tracing",
+ "tracing-subscriber",
+]
+
+[[package]]
+name = "onagre-launcher-service"
+version = "1.2.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "33a5829eb5517bb7e5d487034b5458e94710a5ad9251bc36216e28f5f67464ae"
 dependencies = [
  "anyhow",
  "async-oneshot",
@@ -1237,8 +1303,8 @@ dependencies = [
  "fork",
  "futures",
  "onagre-launcher 1.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
- "onagre-launcher-plugins",
- "onagre-launcher-service",
+ "onagre-launcher-plugins 1.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "onagre-launcher-service 1.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "tokio",
  "tracing",
  "tracing-subscriber",
