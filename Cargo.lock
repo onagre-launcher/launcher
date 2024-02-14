@@ -1156,7 +1156,7 @@ dependencies = [
 
 [[package]]
 name = "onagre-launcher-bin"
-version = "1.2.1"
+version = "1.2.4"
 dependencies = [
  "dirs 4.0.0",
  "mimalloc",
@@ -1168,7 +1168,7 @@ dependencies = [
 
 [[package]]
 name = "onagre-launcher-plugins"
-version = "1.2.3"
+version = "1.2.4"
 dependencies = [
  "anyhow",
  "async-pidfd",
@@ -1202,7 +1202,7 @@ dependencies = [
 
 [[package]]
 name = "onagre-launcher-service"
-version = "1.2.3"
+version = "1.2.4"
 dependencies = [
  "anyhow",
  "async-oneshot",
@@ -1230,7 +1230,7 @@ dependencies = [
 
 [[package]]
 name = "onagre-launcher-toolkit"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "async-trait",
  "dirs 4.0.0",
